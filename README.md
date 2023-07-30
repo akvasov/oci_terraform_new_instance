@@ -1,5 +1,5 @@
 # oci_terraform_new_instance
-<<<<<<< HEAD
+
 Repo with Terraform files to create a new instance into Oracle Cloud Infrastructure
 =======
 Repo with Terraform files to create a new Compute instance of Oracle Cloud Infrastructure:
@@ -12,4 +12,3 @@ Repo with Terraform files to create a new Compute instance of Oracle Cloud Infra
 * data.tf - shell script template file datasource to pass metadata variable into instance creation template
 
 Note: terraform.tfvars file with Authentication, Network and Instance variables was added to .gitignore for security purpose
->>>>>>> master
