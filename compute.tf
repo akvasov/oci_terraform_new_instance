@@ -16,7 +16,7 @@ resource "oci_core_instance" "ubuntu_instance" {
     }
     metadata = {
         ssh_authorized_keys = file(var.path_local_public_key)
-        "user_data"         = data.cloudinit_config.ubuntu-initial-script.rendered
+        user_data         = data.cloudinit_config.ubuntu-initial-script.rendered
     } 
     preserve_boot_volume = false
 }
