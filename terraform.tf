@@ -6,12 +6,13 @@ terraform {
       name = "oci-terraform-github-actions"
     }
   }
+}
 
-    resource "null_resource" "example" {
+
+resource "null_resource" "example" {
        triggers = {
          value = "A example resource that does nothing!"
        }
      }
 
 
-}
