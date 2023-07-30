@@ -15,11 +15,6 @@ resource "oci_core_dhcp_options" "dhcp" {
     type        = "DomainNameServer"
     server_type = "VcnLocalPlusInternet"
   }
-
-#  options {
-#    type                = "SearchDomain"
-#    search_domain_names = ["8.8.8.8"]
-#  }
 }
 # Create the Internet Gateway
 resource "oci_core_internet_gateway" "igw" {
