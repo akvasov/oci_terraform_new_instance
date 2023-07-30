@@ -1,5 +1,5 @@
 data "cloudinit_config" "ubuntu-initial-script" {
-  gzip          = true
+  gzip          = false
   base64_encode = true
 
   part {
