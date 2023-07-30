@@ -6,3 +6,4 @@ Repo with Terraform files to create a new instance into Oracle Cloud Infrastruct
 * security-lists.rf - creates Ingress/Egress acess rules for Private and Public Subnets
 * compute.tf - creates Compute Instance with Ubuntu20.04 within FreeTier AD and assigns ephmemeral Public IP to it
 * install_scripts/buntu-initial-script.sh - shell script to start nginx service on a fresh Instance
+Note: terraform.tfvars file with Authentication, Network and Instance variables was added to .gitignore for security purpose
