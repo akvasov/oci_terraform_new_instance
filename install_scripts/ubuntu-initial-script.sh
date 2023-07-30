@@ -1,15 +1,9 @@
-
 #!/bin/bash
-
 apt-get update
 apt-get -y upgrade
 apt-get -y install nginx
-
 systemctl enable nginx
 systemctl start nginx
-
-hostname=$(hostname)
-
 cat <<EOF > /var/www/html/index.nginx-debian.html 
 <!DOCTYPE html>
 <html>
@@ -30,11 +24,8 @@ working!</p>
 </body>
 </html>
 EOF
-
 # Disable firewall 
 /usr/sbin/netfilter-persistent stop
 /usr/sbin/netfilter-persistent flush
-
 systemctl stop netfilter-persistent.service
 systemctl disable netfilter-persistent.service
-
