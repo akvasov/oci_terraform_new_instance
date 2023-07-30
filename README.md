@@ -1,5 +1,5 @@
 # oci_terraform_new_instance
-Repo with Terraform files to create a new instance into Oracle Cloud Infrastructure:
+Repo with Terraform files to create a new Compute instance of Oracle Cloud Infrastructure:
 * provider-main.tf - OCI provider definition
 * compartment.tf - creates a new compartment under administrator's parent compartment
 * network-main.tf - creates VCN, Internet GW, NAT GW, Route tables for Internet/NAT GWs, Private and Public Subnets with DHCP address allocation
